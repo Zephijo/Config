@@ -1,0 +1,15 @@
+width=300
+height=500
+mode=drun
+filter_rate=100
+allow_markup=true
+allow_images=true
+no_actions=true
+term=foot
+halign=fill
+orientation=vertical
+content_halign=fill
+drun-display_generic=false
+
+
+

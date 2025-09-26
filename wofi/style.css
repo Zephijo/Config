@@ -1,0 +1,81 @@
+#window {
+  background-color: rgba(29, 32, 33, 0.9);
+  /*border: 2px solid rgba(168, 153, 132, 0.9); */
+  border-radius: 8pt;
+  font-family: 'Inter Nerd Font Propo','FuraCode Nerd Font Mono';
+  font-size: 15px;
+}
+#entry {
+  border-radius: 15px;
+  padding: 5px 5px 5px 5px;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+#entry:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#entry:selected {
+  background-color: #a89984;
+}
+
+#text:selected {
+  color: #ebdbb2;
+}
+
+
+#input {
+  border: none;
+  background-color: transparent;
+  color: #d8dee9;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none;
+}
+
+#inner-box {
+  color: #a89984;
+  padding: 2px;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 15px;
+  background-color: transparent;
+}
+
+#scroll {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+  scrollbar,
+  scrollbar slider,
+  scrollbar trough,
+  scrollbar button {
+  min-width: 0px;
+  min-height: 0px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+scrollbar slider {
+  opacity: 0;
+}
+
+#text {
+  padding: 3px;
+  background-color: transparent;
+}
+
+#img {
+  background-color: transparent;
+  padding: 5px;
+}
