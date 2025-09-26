@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Usage: color-preview FF00FF or #FF00FF
+
+if [ -z "$1" ]; then
+  echo "Usage: color-preview COLOR_HEX (e.g. FF00FF or #FF00FF)"
+  exit 1
+fi
+
+HEX="$1"
+
+# Add '#' if missing
+[[ $HEX != \#* ]] && HEX="#$HEX"
+
+# Validate hex format
+if [[ ! "$HEX" =~ ^#([A-Fa-f0-9]{6})$ ]]; then
+  echo "❌ Invalid hex color: $HEX"
+  exit 1
+fi
+
+magick -size 1000x20 xc:"$HEX" /tmp/color.png &&
+kitty +kitten icat /tmp/color.png
+
